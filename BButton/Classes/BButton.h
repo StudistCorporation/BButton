@@ -74,6 +74,13 @@ typedef NS_ENUM(NSUInteger, BButtonType) {
  */
 @property (assign, nonatomic) BOOL shouldShowDisabled;
 
+//MARK: Modified
+// ----------------------------------------------------------------
+@property (assign, nonatomic) float fontSize;
+@property (nonatomic, readwrite) NSUInteger section;
+@property (nonatomic, readwrite) NSUInteger row;
+// ----------------------------------------------------------------
+
 #pragma mark - Initialization
 
 /**

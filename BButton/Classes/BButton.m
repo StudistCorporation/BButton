@@ -59,11 +59,9 @@ static CGFloat const kBButtonCornerRadiusV3 = 4.0f;
 
 - (void)setTextAttributesForStyle:(BButtonStyle)aStyle
 {
-    float fontSize = 17.0f;
-    
-    if (_isSmallType) {
+    if (!_fontSize) {
         
-        fontSize = 12.0f;
+        _fontSize = 17.0f;
     }
     
     // ----------------------------------------------------------------
@@ -71,12 +69,12 @@ static CGFloat const kBButtonCornerRadiusV3 = 4.0f;
     switch (aStyle) {
         case BButtonStyleBootstrapV2:
             [[self titleLabel] setShadowOffset:CGSizeMake(0.0f, -1.0f)];
-            [[self titleLabel] setFont:[UIFont boldSystemFontOfSize:17.0f]];
+            [[self titleLabel] setFont:[UIFont boldSystemFontOfSize:_fontSize]];
             break;
             
         case BButtonStyleBootstrapV3:
             [[self titleLabel] setShadowOffset:CGSizeMake(0.0f, 0.0f)];
-            [[self titleLabel] setFont:[UIFont systemFontOfSize:17.0f]];
+            [[self titleLabel] setFont:[UIFont systemFontOfSize:_fontSize]];
             break;
     }
 }

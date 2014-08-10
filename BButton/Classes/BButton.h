@@ -79,7 +79,6 @@ typedef NS_ENUM(NSUInteger, BButtonType) {
 @property (assign, nonatomic) float fontSize;
 @property (nonatomic, readwrite) NSUInteger section;
 @property (nonatomic, readwrite) NSUInteger row;
-@property (nonatomic, assign) BOOL isSmallType;
 // ----------------------------------------------------------------
 
 #pragma mark - Initialization

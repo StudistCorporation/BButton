@@ -59,6 +59,15 @@ static CGFloat const kBButtonCornerRadiusV3 = 4.0f;
 
 - (void)setTextAttributesForStyle:(BButtonStyle)aStyle
 {
+    float fontSize = 17.0f;
+    
+    if (_isSmallType) {
+        
+        fontSize = 12.0f;
+    }
+    
+    // ----------------------------------------------------------------
+    
     switch (aStyle) {
         case BButtonStyleBootstrapV2:
             [[self titleLabel] setShadowOffset:CGSizeMake(0.0f, -1.0f)];

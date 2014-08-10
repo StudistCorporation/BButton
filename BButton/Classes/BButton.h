@@ -80,7 +80,6 @@ typedef NS_ENUM(NSUInteger, BButtonType) {
 
 //MARK: Modified
 // ----------------------------------------------------------------
-@property (assign, nonatomic) float fontSize;
 @property (nonatomic, readwrite) NSUInteger section;
 @property (nonatomic, readwrite) NSUInteger row;
 // ----------------------------------------------------------------

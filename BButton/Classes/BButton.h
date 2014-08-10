@@ -36,6 +36,8 @@ typedef NS_ENUM(NSUInteger, BButtonStyle) {
     /**
      *  Styles the button like bootstrap version 3.x.x for Small Font Size.
      */
+    LargeBButtonStyleBootstrapV3,
+    MiduimBButtonStyleBootstrapV3,
     SmallBButtonStyleBootstrapV3
 };
 

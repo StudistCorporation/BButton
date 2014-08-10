@@ -69,6 +69,15 @@ static CGFloat const kBButtonCornerRadiusV3 = 4.0f;
             [[self titleLabel] setShadowOffset:CGSizeMake(0.0f, 0.0f)];
             [[self titleLabel] setFont:[UIFont systemFontOfSize:17.0f]];
             break;
+        case LargeBButtonStyleBootstrapV3:
+            [[self titleLabel] setShadowOffset:CGSizeMake(0.0f, 0.0f)];
+            [[self titleLabel] setFont:[UIFont systemFontOfSize:24.0f]];
+            break;
+            
+        case MiduimBButtonStyleBootstrapV3:
+            [[self titleLabel] setShadowOffset:CGSizeMake(0.0f, 0.0f)];
+            [[self titleLabel] setFont:[UIFont systemFontOfSize:20.0f]];
+            break;
             
         case SmallBButtonStyleBootstrapV3:
             [[self titleLabel] setShadowOffset:CGSizeMake(0.0f, 0.0f)];
@@ -378,6 +387,12 @@ static CGFloat const kBButtonCornerRadiusV3 = 4.0f;
         case BButtonStyleBootstrapV3:
             r = kBButtonCornerRadiusV3;
             break;
+        case LargeBButtonStyleBootstrapV3:
+            r = kBButtonCornerRadiusV3;
+            break;
+        case MiduimBButtonStyleBootstrapV3:
+            r = kBButtonCornerRadiusV3;
+            break;
         case SmallBButtonStyleBootstrapV3:
             r = kBButtonCornerRadiusV3;
             break;
@@ -413,6 +428,12 @@ static CGFloat const kBButtonCornerRadiusV3 = 4.0f;
             [self drawBButtonStyleV2InRect:rect withContext:&context];
             break;
         case BButtonStyleBootstrapV3:
+            [self drawBButtonStyleV3InRect:rect withContext:&context];
+            break;
+        case LargeBButtonStyleBootstrapV3:
+            [self drawBButtonStyleV3InRect:rect withContext:&context];
+            break;
+        case MiduimBButtonStyleBootstrapV3:
             [self drawBButtonStyleV3InRect:rect withContext:&context];
             break;
         case SmallBButtonStyleBootstrapV3:
